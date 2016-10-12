@@ -20,8 +20,6 @@ public class Exercise2 {
 			this.gasEngine = gasEngine;	
 		}
 		
-		public car(
-		
 		public void moveForward() {
 			engine.spinWheels();
 		}
