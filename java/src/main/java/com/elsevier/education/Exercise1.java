@@ -5,7 +5,8 @@ package com.elsevier.education;
 TODO: Make this class immutable.
 
 */
-public Final class Exercise1 {
+//making class as final
+public final class Exercise1 {
 
 	public static class Person {
 		//seeting the data member as final and removing the setter method
