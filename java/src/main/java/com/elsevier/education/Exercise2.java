@@ -11,10 +11,16 @@ public class Exercise2 {
 
 	public static class Car {
 		
-		private GasEngine engine = new GasEngine();
+		private GasEngine engine;
 		
 		public Car() {
 		}
+		
+		public Car(GasEngine gasEngine){
+			this.gasEngine = gasEngine;	
+		}
+		
+		public car(
 		
 		public void moveForward() {
 			engine.spinWheels();
@@ -22,8 +28,18 @@ public class Exercise2 {
 	}
 	
 	public static class GasEngine {
+		private static GasEngine gasObj;
+		
+		public GasEngine(){
+			this.gasObj = new GasEngine();	
+		}
+		
+		Car car = new Car(gasObj);
+		
+		car.moveForward();
+			
 		public void spinWheels() {
-			// no-op for now
+			System.out.println("Sping Gas Engine wheels");
 		}
 	}
 }
