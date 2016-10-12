@@ -25,7 +25,8 @@ public class Exercise3 {
 	
 	public static class Person {
 	
-		private static Random generator = new java.util.Random();
+		//private static Random generator = new java.util.Random();
+		private static int multiplier = 5;
 		private Integer id;
 		
 		public Person(int newId) {
@@ -33,7 +34,8 @@ public class Exercise3 {
 		}
 		
 		public int hashCode() {
-			return id * generator.nextInt();
+			//return id * generator.nextInt();
+			return id * multiplier;
 		}
 		
 		public boolean equals(Object other) {
