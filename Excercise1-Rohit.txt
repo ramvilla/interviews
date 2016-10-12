@@ -1,0 +1,27 @@
+//Refactor to make class immutable
+
+package com.elsevier.eols.usermanagementservice.model;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+//making class as final for immutable
+public final class EvolvePar {
+   
+   //data member should be final and private
+   
+   @JsonProperty("par")
+   private final List<EvolveParSchema> par;
+
+   public List<EvolveParSchema> getPar() {
+      return par;
+   }
+
+   //Commenting out the setter methods as it shouldn't modify the fields
+   /*
+   public void setPar(List<EvolveParSchema> par) {
+      this.par = par;
+   }
+	*/
+}
