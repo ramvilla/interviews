@@ -26,15 +26,6 @@ public class Exercise2 {
 	}
 	
 	public static class GasEngine {
-		private static GasEngine gasObj;
-		
-		public GasEngine(){
-			this.gasObj = new GasEngine();	
-		}
-		
-		Car car = new Car(gasObj);
-		
-		car.moveForward();
 			
 		public void spinWheels() {
 			System.out.println("Sping Gas Engine wheels");
